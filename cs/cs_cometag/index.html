@@ -13,10 +13,8 @@
       
       
       
-        <link rel="prev" href="../cs_countdown/">
+        <link rel="prev" href="../cs_ohacome/">
       
-      
-        <link rel="next" href="../cs_firsttime/">
       
       
       <link rel="icon" href="../../images/favicon.png">
@@ -24,7 +22,7 @@
     
     
       
-        <title>100人目のコメントを祝う - まるっとれいな｜配信レイアウト支援ツール</title>
+        <title>コメント数に応じて表示を出す - まるっとれいな｜配信レイアウト支援ツール</title>
       
     
     
@@ -137,7 +135,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              100人目のコメントを祝う
+              コメント数に応じて表示を出す
             
           </span>
         </div>
@@ -845,27 +843,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    100人目のコメントを祝う
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../cs_100come/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -874,45 +854,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    攻略チートシートについて
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    やりたいこと
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    設定
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -982,9 +923,27 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../cs_cometag/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    コメント数に応じて表示を出す
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -993,6 +952,45 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    攻略チートシートについて
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    やりたいこと
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    設定
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1065,7 +1063,7 @@
                   
 
 
-  <h1>100人目のコメントを祝う</h1>
+  <h1>コメント数に応じて表示を出す</h1>
 
 <h2 id="_1">攻略チートシートについて<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
@@ -1073,21 +1071,27 @@
 </ul>
 <h2 id="_2">やりたいこと<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ul>
-<li>あいさつ（例：おはわん） 100 人目の名前を表示します</li>
+<li>コメントに応じて表示を増やします。</li>
 </ul>
 <h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>
-<li>まるっとれいなで文字を数えるためのタグをつくります</li>
+<li>OBSに下記の設定をします。</li>
 </ul>
-<p><a class="glightbox" href="../../images/cs_100come_p01.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/cs_100come_p01.png" /></a></p>
+<p>ソース名の末尾部分には、敷居となる数字をいれます。</p>
+<p><a class="glightbox" href="../../images/cs_cometag_p02.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/cs_cometag_p02.png" /></a></p>
 <ul>
-<li>まるっとれいなでどういうときにアクションを起こすか設定します。</li>
+<li>まるっとれいなに下記の設定をします。</li>
 </ul>
-<p><a class="glightbox" href="../../images/cs_100come_p02.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/cs_100come_p02.png" /></a></p>
+<p><a class="glightbox" href="../../images/cs_cometag_p01.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/cs_cometag_p01.png" /></a></p>
+<div class="admonition info">
+<p class="admonition-title">アイテム名にタグを使うのがポイントです</p>
 <ul>
-<li>転送先をいれます。<code>{action.comment100.user.name}</code>タグは、上のアクションが実行されたときのチャットユーザの名前を拾います。</li>
+<li><code comment.count="comment.count">'comment{comment.count}@グループ化'の</code>`の部分がコメント数に応じて置き換わり、該当するソースがある場合に処理されるという仕組みです</li>
 </ul>
-<p><a class="glightbox" href="../../images/cs_100come_p03.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/cs_100come_p03.png" /></a></p>
+</div>
+<ul>
+<li>設定がうまくいくと、コメントが10個、20個来たときにゲージとなる枠が表示されていきます。</li>
+</ul>
 
   <hr>
 <div class="md-source-file">
@@ -1130,7 +1134,7 @@
       <nav class="md-footer__inner md-grid" aria-label="フッター" >
         
           
-          <a href="../cs_countdown/" class="md-footer__link md-footer__link--prev" aria-label="前: 記念日カウントダウン" rel="prev">
+          <a href="../cs_ohacome/" class="md-footer__link md-footer__link--prev" aria-label="前: おはようコメントに反応する" rel="prev">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1140,27 +1144,11 @@
                 前
               </span>
               <div class="md-ellipsis">
-                記念日カウントダウン
+                おはようコメントに反応する
               </div>
             </div>
           </a>
         
-        
-          
-          <a href="../cs_firsttime/" class="md-footer__link md-footer__link--next" aria-label="次: 初見さんの数を数える" rel="next">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                次
-              </span>
-              <div class="md-ellipsis">
-                初見さんの数を数える
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
         
       </nav>
     

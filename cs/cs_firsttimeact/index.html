@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../cs_countdown/">
+        <link rel="prev" href="../cs_firsttime/">
       
       
-        <link rel="next" href="../cs_firsttime/">
+        <link rel="next" href="../cs_ohacome/">
       
       
       <link rel="icon" href="../../images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>100人目のコメントを祝う - まるっとれいな｜配信レイアウト支援ツール</title>
+        <title>初見コメント時にメディアを再生 - まるっとれいな｜配信レイアウト支援ツール</title>
       
     
     
@@ -137,7 +137,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              100人目のコメントを祝う
+              初見コメント時にメディアを再生
             
           </span>
         </div>
@@ -845,6 +845,46 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../cs_100come/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    100人目のコメントを祝う
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cs_firsttime/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    初見さんの数を数える
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -858,7 +898,7 @@
           
   
   <span class="md-ellipsis">
-    100人目のコメントを祝う
+    初見コメント時にメディアを再生
   </span>
   
 
@@ -869,7 +909,7 @@
         
   
   <span class="md-ellipsis">
-    100人目のコメントを祝う
+    初見コメント時にメディアを再生
   </span>
   
 
@@ -909,50 +949,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    補足
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cs_firsttime/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    初見さんの数を数える
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cs_firsttimeact/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    初見コメント時にメディアを再生
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1050,6 +1057,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    補足
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1065,7 +1079,7 @@
                   
 
 
-  <h1>100人目のコメントを祝う</h1>
+  <h1>初見コメント時にメディアを再生</h1>
 
 <h2 id="_1">攻略チートシートについて<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
@@ -1073,21 +1087,38 @@
 </ul>
 <h2 id="_2">やりたいこと<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ul>
-<li>あいさつ（例：おはわん） 100 人目の名前を表示します</li>
+<li>初見さんの書き込みがあったら音声をだします。</li>
 </ul>
 <h2 id="_3">設定<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>
-<li>まるっとれいなで文字を数えるためのタグをつくります</li>
+<li>まるっとれいなに下記の設定をします。</li>
 </ul>
-<p><a class="glightbox" href="../../images/cs_100come_p01.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/cs_100come_p01.png" /></a></p>
+<p><a class="glightbox" href="../../images/cs_firsttimeact_p01.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/cs_firsttimeact_p01.png" /></a></p>
 <ul>
-<li>まるっとれいなでどういうときにアクションを起こすか設定します。</li>
+<li>OBSに下記の設定をします。</li>
 </ul>
-<p><a class="glightbox" href="../../images/cs_100come_p02.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/cs_100come_p02.png" /></a></p>
+<p><a class="glightbox" href="../../images/cs_firsttimeact_p02.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/cs_firsttimeact_p02.png" /></a></p>
 <ul>
-<li>転送先をいれます。<code>{action.comment100.user.name}</code>タグは、上のアクションが実行されたときのチャットユーザの名前を拾います。</li>
+<li>わんコメに下記の設定をします。</li>
 </ul>
-<p><a class="glightbox" href="../../images/cs_100come_p03.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/cs_100come_p03.png" /></a></p>
+<p><a class="glightbox" href="../../images/cs_firsttime_p04.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/cs_firsttime_p04.png" /></a></p>
+<ul>
+<li>設定がうまくいくと、初見コメがある度にメディアが再生されます。</li>
+</ul>
+<h2 id="_4">補足<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">初見の扱いについて</p>
+<ul>
+<li>わんコメに記録されている情報を基に、初見かどうかを判断しています。</li>
+</ul>
+</div>
+<div class="admonition info">
+<p class="admonition-title">メディアについて</p>
+<ul>
+<li>動画や音声の場合はこのチェックを打っておくことで再生終了時に非表示となります。</li>
+</ul>
+<p><a class="glightbox" href="../../images/cs_firsttimeact_p03.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Image title" src="../../images/cs_firsttimeact_p03.png" /></a></p>
+</div>
 
   <hr>
 <div class="md-source-file">
@@ -1130,7 +1161,7 @@
       <nav class="md-footer__inner md-grid" aria-label="フッター" >
         
           
-          <a href="../cs_countdown/" class="md-footer__link md-footer__link--prev" aria-label="前: 記念日カウントダウン" rel="prev">
+          <a href="../cs_firsttime/" class="md-footer__link md-footer__link--prev" aria-label="前: 初見さんの数を数える" rel="prev">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -1140,20 +1171,20 @@
                 前
               </span>
               <div class="md-ellipsis">
-                記念日カウントダウン
+                初見さんの数を数える
               </div>
             </div>
           </a>
         
         
           
-          <a href="../cs_firsttime/" class="md-footer__link md-footer__link--next" aria-label="次: 初見さんの数を数える" rel="next">
+          <a href="../cs_ohacome/" class="md-footer__link md-footer__link--next" aria-label="次: おはようコメントに反応する" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 次
               </span>
               <div class="md-ellipsis">
-                初見さんの数を数える
+                おはようコメントに反応する
               </div>
             </div>
             <div class="md-footer__button md-icon">
