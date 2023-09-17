@@ -6,17 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="「まるっとれいな」は他のツールとＯＢＳをつなぐ「支援部分」を担っています。">
+        <meta name="description" content="「まるっとれいな」のドキュメントページです">
       
       
         <meta name="author" content="nao">
       
       
       
-        <link rel="prev" href="../install/">
-      
-      
-        <link rel="next" href="../import/">
       
       
       <link rel="icon" href="../images/favicon.png">
@@ -24,7 +20,7 @@
     
     
       
-        <title>利用規約 - まるっとれいな｜配信・レイアウト支援ツール</title>
+        <title>Dataset - まるっとれいな｜配信・レイアウト支援ツール</title>
       
     
     
@@ -137,7 +133,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              利用規約
+              Dataset
             
           </span>
         </div>
@@ -237,12 +233,10 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href=".." class="md-tabs__link">
           
   
@@ -362,19 +356,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
         
           <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
@@ -387,7 +379,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             まるっとれいな▼
@@ -478,27 +470,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    利用規約
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../system_info/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -507,45 +481,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    本ソフトウェアに関する表記
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    支援版での利用
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    企業での利用
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1110,21 +1045,21 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    本ソフトウェアに関する表記
+    設定データを作る
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    支援版での利用
+    パネルに割り当てる
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    企業での利用
+    ショートカット登録
   </a>
   
 </li>
@@ -1144,27 +1079,165 @@
                   
 
 
-  <h1>利用規約</h1>
+  <h1>Dataset</h1>
 
-<p>「まるっとれいな」は他のツールとＯＢＳをつなぐ「支援部分」を担っています。</p>
-<h2 id="_1">本ソフトウェアに関する表記<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">前提条件</p>
 <ul>
-<li>本ソフトウェアは、基本的に利用料無料で提供されるフリーソフトウェアです。</li>
-<li>あるがままの状態で提供され、いかなる損害に関しても補償はありません。</li>
-<li>更新版は<a href="https://vtool.booth.pm/items/5067032">配布サイト</a>で配布します。</li>
-<li>開発部品として、他のライセンスを適用している場合があります。各社に帰属するものは、各社のライセンスのもと運用されます。</li>
-<li>フリー版をご利用の方は、配信ページなどに「まるっとれいな」を使っている旨の表記が必要です。</li>
+<li>OBSにつないでから実施した方が圧倒的に快適です</li>
 </ul>
-<h2 id="_2">支援版での利用<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+</div>
+<h2 id="_1">設定データを作る<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
-<li>ゆかりねっとコネクターの支援者の方は、支援コードを登録することで支援モードを利用できるほか、上記「まるっとれいなを使っている表記が必要」の条項が免除となります。</li>
+<li>その処理でどの様なデータを送るかを決めるものです。</li>
+<li>いわば、「画面に何を設定してほしいか」を設定するものだとおもってください</li>
 </ul>
-<h2 id="_3">企業での利用<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="images/dataset_p01.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="画像" src="images/dataset_p01.png" /></a></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>設定名</td>
+<td>見た目で分かる設定の名前を付けます</td>
+</tr>
+<tr>
+<td>シーン</td>
+<td>その設定を送るときに表示するシーンの名前を付けます</td>
+</tr>
+<tr>
+<td>トランジション</td>
+<td>切り替え時の表示効果を選びます</td>
+</tr>
+<tr>
+<td>アクション</td>
+<td>この時にOBSがおこなう動作を設定します<br>・レコーディングバッファON/OFF<br>・プレイバック（今～3回前）<br>・プレイバック終了<br>・プレイバックセーブ<br>・ストリーミング開始、終了</td>
+</tr>
+<tr>
+<td>有効</td>
+<td>その設定項目を反映するかどうか</td>
+</tr>
+<tr>
+<td>シーン</td>
+<td>反映するシーン先</td>
+</tr>
+<tr>
+<td>送信先ソース</td>
+<td>対象となるソース名</td>
+</tr>
+<tr>
+<td>書き込みファイル名</td>
+<td>OBSファイル連携時に、そのファイル名にデータを書きます</td>
+</tr>
+<tr>
+<td>表示</td>
+<td>そのソースを表示するかどうか</td>
+</tr>
+<tr>
+<td>設定値</td>
+<td>表示する内容<br>・テキストソース：文章<br>・ブラウザ：URL<br>・画像、動画ソース：メディアファイル</td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li>フリーソフトとしての範囲で利用される分には問題ありません。</li>
-<li>動作保証はありませんので、目的に合うかは企業側で検証・ご判断ください。</li>
-<li>バグ修正や機能開発を特段お引き受けするなどのサービスはございません。</li>
+<li>「＋」で項目を作り、設定を入れます。</li>
+<li>「ー」で項目を削除できます。</li>
+<li>「送信」で試し送信ができます。</li>
 </ul>
+<h2 id="_2">パネルに割り当てる<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>実際に運用するときに使うパネルになります</li>
+</ul>
+<p><a class="glightbox" href="images/dataset_p02.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="画像" src="images/dataset_p02.png" /></a></p>
+<div class="admonition tips">
+<p class="admonition-title">編集時にはモードを切り替えます</p>
+<ul>
+<li>右下のモードを切り替えることで、編集と運用を切り替えます</li>
+<li>運用モード時は、ボタンを押すと実際にOBSに設定が送信されます</li>
+</ul>
+</div>
+<ul>
+<li>設定をするには、下記の方法でおこないます。<ul>
+<li>1) モードを登録モードにかえます</li>
+<li>2) データもしくはシーケンスを選びます。</li>
+<li>3) プルダウンの中から割り付けたい設定を選びます。</li>
+<li>4) 割り付けたいボタンを押します</li>
+<li>5) パネルを右クリックして、色を選びます</li>
+<li>6 モードを運用モードに戻します</li>
+</ul>
+</li>
+</ul>
+<h2 id="_3">ショートカット登録<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="images/dataset_p03.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="画像" src="images/dataset_p03.png" /></a></p>
+<ul>
+<li>このキーを押したときに、設定を有効にします。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DirectSend</td>
+<td>直接送信</td>
+</tr>
+<tr>
+<td>Foward</td>
+<td>設定データを1つ進める</td>
+</tr>
+<tr>
+<td>Reverse</td>
+<td>設定データを1つ戻す</td>
+</tr>
+<tr>
+<td>PlaybackSave</td>
+<td>プレイバックデータを保存</td>
+</tr>
+<tr>
+<td>PlaybackStart0</td>
+<td>現在のプレイバックデータを再生</td>
+</tr>
+<tr>
+<td>PlaybackStart1</td>
+<td>1つ前のプレイバックデータを再生</td>
+</tr>
+<tr>
+<td>PlaybackStart2</td>
+<td>2つ前のプレイバックデータを再生</td>
+</tr>
+<tr>
+<td>PlaybackStart3</td>
+<td>3つ前のプレイバックデータを再生</td>
+</tr>
+<tr>
+<td>PlaybackStop</td>
+<td>プレイバックの再生を終了</td>
+</tr>
+<tr>
+<td>R1C1</td>
+<td>上から１つめ、左から１つ目のパネルに割り当てられたものを起動</td>
+</tr>
+<tr>
+<td>R1C5</td>
+<td>上から１つめ、左から５つ目のパネルに割り当てられたものを起動</td>
+</tr>
+<tr>
+<td>R2C1</td>
+<td>上から２つめ、左から１つ目のパネルに割り当てられたものを起動</td>
+</tr>
+<tr>
+<td>R3C5</td>
+<td>上から３つめ、左から５つ目のパネルに割り当てられたものを起動</td>
+</tr>
+</tbody>
+</table>
 
   <hr>
 <div class="md-source-file">
@@ -1202,44 +1275,6 @@
       
         <footer class="md-footer">
   
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="フッター" >
-        
-          
-          <a href="../install/" class="md-footer__link md-footer__link--prev" aria-label="前: インストール" rel="prev">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-            </div>
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                前
-              </span>
-              <div class="md-ellipsis">
-                インストール
-              </div>
-            </div>
-          </a>
-        
-        
-          
-          <a href="../import/" class="md-footer__link md-footer__link--next" aria-label="次: レイアウトを使う" rel="next">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                次
-              </span>
-              <div class="md-ellipsis">
-                レイアウトを使う
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
     
   
   <div class="md-footer-meta md-typeset">
