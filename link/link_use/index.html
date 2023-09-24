@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.1">
     
     
       
@@ -28,10 +28,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.72749a73.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a5377069.min.css">
       
       
 
@@ -866,7 +866,7 @@
         
           <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
-    カウントダウン
+    カウント
   </a>
   
 </li>
@@ -1294,7 +1294,7 @@
         
           <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
-    カウントダウン
+    カウント
   </a>
   
 </li>
@@ -1409,14 +1409,14 @@
 </ul>
 <p><a class="glightbox" href="../../images/import_use_p09.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../../images/import_use_p09.png" /></a></p>
 <h2 id="_8">機能<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
-<h3 id="_9">カウントダウン<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<h3 id="_9">カウント<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
 <ul>
-<li>指定した時間をターゲットとしてカウントダウンをします。</li>
+<li>指定した時間をターゲットとしてカウントダウン/カウントアップをします。</li>
 <li>24時間以上の場合も、日ではなく時間として表示されます。（例：29:12:20）</li>
 </ul>
 <p><a class="glightbox" href="../../images/import_use_p02.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../../images/import_use_p02.png" /></a></p>
 <ul>
-<li>タグは <code>live.time.countdown</code> になります。</li>
+<li>タグは <code>live.time.countDown</code>、<code>live.time.countUp</code> になります。</li>
 </ul>
 <p><a class="glightbox" href="../../images/import_use_p06.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../../images/import_use_p06.png" /></a></p>
 <h3 id="_10">文字カウント<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
@@ -1488,20 +1488,16 @@
 </thead>
 <tbody>
 <tr>
+<td>有効化</td>
+<td>この設定を使うか選びます</td>
+</tr>
+<tr>
 <td>設定名</td>
 <td>このアクションの名前。タグにも使われます</td>
 </tr>
 <tr>
 <td>判定条件</td>
 <td>タグと計算式が使えます。成立するとアクションが走ります</td>
-</tr>
-<tr>
-<td>シーン切り替え</td>
-<td>OBSのシーンを指定のものに切り替えます</td>
-</tr>
-<tr>
-<td>アイテム表示</td>
-<td>OBSの指定ソースを表示します（未成立時は非表示にします）</td>
 </tr>
 <tr>
 <td>アクションは一度だけ</td>
@@ -1512,8 +1508,32 @@
 <td>条件が以前と変わったときに評価します</td>
 </tr>
 <tr>
+<td>シーン切替</td>
+<td>OBSのシーンを指定のものに切り替えます</td>
+</tr>
+<tr>
+<td>ソース</td>
+<td>OBSの指定ソースを操作します（表示・非表示どちらか選べます）</td>
+</tr>
+<tr>
+<td>再生終了後に非表示</td>
+<td>ソースがメディアの場合、再生が終わったら非表示にします</td>
+</tr>
+<tr>
 <td>再生終了時にアイテム非表示</td>
 <td>再生が終わったらアイテムを非表示にします</td>
+</tr>
+<tr>
+<td>ブラウザソース&gt;ソース</td>
+<td>OBSのブラウザの表示内容を個別に指示します。タグが利用可能です。</td>
+</tr>
+<tr>
+<td>ブラウザソース&gt;ファイル</td>
+<td>OBSのブラウザのファイルを差し替えます。タグが利用可能です。</td>
+</tr>
+<tr>
+<td>ブラウザソース&gt;スタイルシート</td>
+<td>OBSのブラウザのスタイルシートを差し替えます。タグが利用可能です。</td>
 </tr>
 <tr>
 <td>WordParty起動</td>
@@ -1531,7 +1551,8 @@
 |---|-----|
 |OSC|指定したアドレスへ、(string)の形式で文をおくります<br>* /chatbox/input にした場合のみ自動送信されます|
 |Neos VR|Neos向けに変換をかけてデータを送ります。変数名をCHとして指定してください|
-|XSOverlay|ＶＲ通知として送ります。|</li>
+|XSOverlay|ＶＲ通知として送ります。|
+|VTube Studio|VTube Studio にキーバインドを実行するよう指示をだします。キーにはキーバインドの設定名（タイトル）をいれます|</li>
 </ul>
 <div class="admonition info">
 <p class="admonition-title">わんコメ送付について</p>
@@ -1553,6 +1574,7 @@
 <li>カスタム転送の設定値として、指定された文字と同じ文字があれば辞書の内容に置き換えます。</li>
 <li>機能はたとえば、レベルがあがるごとに表示名を変えるとか、そういうケースで活用します。</li>
 </ul>
+<p><a class="glightbox" href="../../images/import_use_p18.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="Alt text" src="../../images/import_use_p18.png" /></a></p>
 <h2 id="_14">ソースについて<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
 <ul>
 <li>ソースには文字以外にも指定ができます。</li>
@@ -1586,7 +1608,7 @@
   <small>
     
       最終更新日:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年9月17日</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2023年9月24日</span>
       
     
   </small>
@@ -1697,10 +1719,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.section", "navigation.footer"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "navigation.instant", "navigation.tabs", "navigation.top", "navigation.section", "navigation.footer"], "search": "../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      <script src="../../assets/javascripts/bundle.4e0fa4ba.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
